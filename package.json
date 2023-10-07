@@ -1,6 +1,6 @@
 {
-  "name": "@react-native-community/blur",
-  "version": "4.3.2",
+  "name": "@kirz/react-native-blur",
+  "version": "1.0.0",
   "description": "React Native Blur component",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -26,7 +26,7 @@
     "typescript": "tsc --noEmit",
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
     "prepare": "bob build",
-    "release": "release-it",
+    "release": "npm publish --access public",
     "example": "yarn --cwd example",
     "bootstrap": "yarn example && yarn && yarn example pods"
   },
@@ -54,7 +54,6 @@
     "@types/jest": "^29.5.1",
     "@types/react": "~18.0.20",
     "@types/react-native": "^0.70.1",
-    "commitlint": "^17.0.2",
     "eslint": "^8.23.1",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
@@ -77,11 +76,6 @@
     "modulePathIgnorePatterns": [
       "<rootDir>/example/node_modules",
       "<rootDir>/lib/"
-    ]
-  },
-  "commitlint": {
-    "extends": [
-      "@commitlint/config-conventional"
     ]
   },
   "release-it": {
