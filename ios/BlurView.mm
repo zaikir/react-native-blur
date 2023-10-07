@@ -184,6 +184,12 @@ using namespace facebook::react;
   UIBlurEffectStyle style = [self blurEffectStyle];
   self.blurEffect = [BlurEffectWithAmount effectWithStyle:style andBlurAmount:self.blurAmount];
   self.blurEffectView.effect = self.blurEffect;
+
+  if ([self.blurType isEqual: @"transparent"]) {
+    for (UIView *subview in self.blurEffectView.subviews) {
+      subview.backgroundColor = [UIColor clearColor];
+    }
+  }
 }
 
 - (void)updateFallbackView
