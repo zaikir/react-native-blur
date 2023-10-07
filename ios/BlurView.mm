@@ -131,6 +131,7 @@ using namespace facebook::react;
 
 - (UIBlurEffectStyle)blurEffectStyle
 {
+  if ([self.blurType isEqual: @"transparent"]) return UIBlurEffectStyleDark;
   if ([self.blurType isEqual: @"xlight"]) return UIBlurEffectStyleExtraLight;
   if ([self.blurType isEqual: @"light"]) return UIBlurEffectStyleLight;
   if ([self.blurType isEqual: @"dark"]) return UIBlurEffectStyleDark;
