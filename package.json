@@ -1,6 +1,6 @@
 {
   "name": "@kirz/react-native-blur",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "React Native Blur component",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
